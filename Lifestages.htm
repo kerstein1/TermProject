@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Life Stages</title>
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" text="text/css" href="nav.css">
     <link rel="stylesheet" text="text/css" href="body.css">
+    <link href="jquery-ui.css" rel="stylesheet">
+
     <style>
         .title {
             margin-top: 0;
@@ -21,24 +25,77 @@
         }
 
         .firstDiv {
-            background-color:#f5f5dc;
+            background-color: #f5f5dc;
             text-align: center;
             padding-bottom: 5px;
         }
-        .secondDiv{
+
+        .secondDiv {
             background-color: white;
             text-align: center;
         }
-        .thirdDiv{
+
+        .thirdDiv {
             background-color: #f5f5dc;
+        }
+
+        #source {
+            text-decoration: none;
+            padding-top: 0px;
+            text-align: center;
+        }
+    </style>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+
+    <script text="text/javascript">
+        $(function () {
+            // $("#first").click(function()
+            // {
+            //     $("tr:first").show();
+            //     $("tr:sec").hide();
+
+            // });
+
+            $("#odd").click(function () {
+                $("tr:odd").hide();
+                $("tr:even").show();
+            });
+
+            $("#even").click(function () {
+                $("tr:even").hide();
+                $("tr:odd").show();
+            })
+
+        });
+
+
+
+    </script>
+    <style type="text/css">
+        #tb {
+            padding-left: 50;
+            padding-right:50;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 25px;
+            color: black;
+            text-align: left;
+        }
+
+        #s {
+            padding-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
     <div class="firstDiv">
-    <header>
-        <nav class="navigation-bar">
+        <header>
+            <nav class="navigation-bar">
                 <!-- <div class="logo">
                         <img src="images/rnblogo.png">
                     </div> -->
@@ -56,19 +113,151 @@
                     </ul>
                 </div>
             </nav>
-    </header>
-    <p class="title">Life Stages</p>
-    <img src="Images/lifestages.jpg" alt="Bank of America Lifestages Model" title="Bank of America Life Stages Model">
+        </header>
+        <p class="title" id="s">Life Stages</p>
+        <!-- <img src="Images/lifestages.jpg" alt="Bank of America Lifestages Model"
+            title="Bank of America Life Stages Model"> -->
+        <!-- <table id="tbl"> -->
+        <!-- <tr>
+                <td>
+                    <img class="pictures" src="images/piggybank.png" height="100" />
+                </td>
+                <td>Teens:
+                    <ul>
+                        <li>Explore Saving Options</li>
+                        <li>Money Saving Habits</li>
+
+                    </ul>
+                </td>
+                <td>
+                    <img src="images/college.png" height="100" />
+                </td>
+                <td>College Students
+                    <ul>
+                        <li>Learn to Navigate Personal finances </li>
+                        <li>How to Save While At School</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="images/job.png" height="100" />
+                </td>
+                <td>Young Adults
+                    <ul>
+                        <li>Financial Independence</li>
+                        <li>Loans & Saving</li>
+
+                    </ul>
+                </td>
+                
+            </tr>
+            <tr>
+                    <td>Teens:
+                            <ul>
+                                <li>Explore Saving Options</li>
+                                <li>Money Saving Habits</li>
+    
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="images/college.png" height="100" />
+                        </td>
+                        <td>College Students
+                            <ul>
+                                <li>Learn to Navigate Personal finances </li>
+                                <li>How to Save While At School</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="images/job.png" height="100" />
+                        </td>
+                        <td>Young Adults
+                            <ul>
+                                <li>Financial Independence</li>
+                                <li>Loans & Saving</li>
+    
+                            </ul>
+                        </td> -->
+        <table id="tb">
+            <tr>
+                <td><img class="pictures" src="images/piggybank.png" height="100" /></td>
+                <td>Teens
+                    <ul>
+                        <li>Explore Saving Options</li>
+                        <li>Money Saving Habits</li>
+
+                    </ul>
+                </td>
+                <td><img src="images/college.png" height="100" /></td>
+                <td>College Students
+
+                    <ul>
+                        <li>Learn to Navigate Personal finances </li>
+                        <li>How to Save While At School</li>
+                    </ul>
+                </td>
+                <td> <img src="images/job.png" height="100" /></td>
+                <td>
+                    Young Adults
+                    <ul>
+                        <li>Financial Independence</li>
+                        <li>Loans & Saving</li>
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+
+                <td><img src="images/family.jpg" height="100" /></td>
+                <td>Parents
+                    <ul>
+                        <li>Financial Independence</li>
+                        <li>Loans & Saving</li>
+
+                    </ul>
+
+                </td>
+                <td><img src="images/caregiver.png" height="100"></td>
+                <td>Care Givers
+                    <ul>
+                        <li>Financial Independence</li>
+                        <li>Loans & Saving</li>
+
+                    </ul>
+                </td>
+                <td><img src="images/senior.jpg"height="100"></td>
+                <td>Senior
+                    <ul>
+                        <li>Financial Independence</li>
+                        <li>Loans & Saving</li>
+
+                    </ul>
+                </td>
+            </tr>
+
+            </tr>
+        </table>
+
+
+        <button id="odd">Ages: 12-30</button>
+        <button id="even">Ages: 30 or more</button>
     </div>
+
+
     <div class="secondDiv">
-        <p>Now that you know a little bit more about the Life Stages. Here is a graphic from Bank of America that gives
+        <p id="subtitle">Now that you know a little bit more about the Life Stages.</p>
+        <p id="subtitle">Here is a graphic from Bank of America that gives
             you a little more understanding:</p>
         <img src="Images/LS-explained.jpg" alt="Life Stages Graphic" title="Bank of America Life Stages Graphic"
             height="600"></a>
+        <p>
+            <a id="source"
+                href="https://www.business2community.com/customer-experience/bank-of-america-turns-life-stage-into-a-product-02165210">Source</a>
+        </p>
     </div>
     <div class="thirdDiv">
 
     </div>
+
 </body>
 
 </html>
