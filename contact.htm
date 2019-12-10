@@ -79,6 +79,47 @@
 
         }
     </style>
+    <script>
+    function validateForm(){
+      let myForm = document.getElementById("myForm");
+      let fname = myForm.lname.value;
+      let email = myForm.eaddress.value;
+      let com = myForm.comments.value;
+
+      if (fname.length == 0 || email == ""){
+          alert("Please finish the form");
+      }
+      else if (com.length == 0){
+          alert("Please include comments.");
+
+       
+      }else 
+      document.myForm.submit();
+      return false;
+    } 
+// function validateForm(){
+//       let myForm = document.getElementById("myForm");
+//       let fname = myForm.lname.value;
+//       let email = myForm.eaddress.value;
+//       let com = myForm.comments.value;
+
+//       if (validateEmail(document.getElementById('myForm').value)){
+//           return true;
+//       }
+//       else if (fname.length == 0 || email == ""){
+//           alert("Please finish the form");
+//       }
+//       else if (com.length == 0){
+//           alert("Please include comments.");
+
+       
+//       }else
+//       document.myForm.reset();
+      
+//    return false;
+//     }
+    </script>
+
 </head>
 
 <body>
@@ -113,7 +154,7 @@
             Fill-out Form for Inquiries:
         </p>
 
-        <form id="f" method="post" action="mailto:Kerstein1@babson.edu" enctype="text/plain">
+        <form id="myForm" method="post" action="mailto:Kerstein1@babson.edu" enctype="text/plain">
             <div>
                 Name
                 <input type="text" name="lname" maxlength="30" size="20" placeholder="Full Name">
@@ -121,8 +162,8 @@
                 <input type="text" name="eaddress" maxlength="30" size="20" placeholder="Email">
             </div>
             <p>Please include any comments/questions that you may have: </p>
-            <p><textarea name="coments" rows="5" cols="29" placeholder="Write Comments Here"></textarea></p>
-            <input type="submit" value="Submit" name="Submit" />
+            <p><textarea name="comments" rows="5" cols="29" placeholder="Write Comments Here"></textarea></p>
+            <input type="submit" value="Submit" name="Submit" onclick="return validateForm()" />
             <input type="reset" value="Reset" name="Reset" />
         </form>
     </div>
@@ -134,9 +175,9 @@
             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 
-        <div class="thirdDiv">
+        <!-- <div class="thirdDiv">
 
-        </div>
+        </div> -->
     </div>
 </body>
 

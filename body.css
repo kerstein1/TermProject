@@ -29,6 +29,10 @@ div.absolute{
 }
 .thirdDiv{
     background-color: #f5f5dc;
+    
+}
+.fourthDiv{
+    background-color: white;
     text-align: center;
 }
 #sp{
@@ -49,3 +53,11 @@ div.absolute{
     font-weight: 400;
     padding-bottom: 0px;
 }
+#tbl{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+     color: black;
+     padding-left: auto;
+     padding-right: auto;
+ }
+
