@@ -26,11 +26,54 @@
     </style>
     <script>
     function changeTextColor(){
-        const bgColors = ["#c5d1b5", "#e0b59a", "#bcaf9c"];
+        // const bgColors = ["#c5d1b5", "#e0b59a", "#bcaf9c"];
+        const bgColors = ["orange", "green", "Azure", "Navy Blue", "Pea Green", "Silver"];
         let n = bgColors.length; 
         let randIndex = Math.floor(Math.random()*n);
         let a = document.getElementById("b1");
         a.style.color = bgColors [randIndex];
+    }
+
+    
+    function changePic(x){
+        let h = document.getElementById("tbl");
+        let z = document.getElementById("heading");
+        let sm = document.getElementById("pic");
+       
+        
+        if (x =="pic"){
+            h.style.display = "none";
+           
+            sm.inner.display = "none";
+            z.style.display = "inline";
+        }
+            if (x =="tbl"){
+            h.style.display = "inline";
+           
+            sm.inner.display = "inline";
+            z.style.display = "inline";
+    
+            
+    // else if (x=="tbl"){
+    //         // h.innerHTML.display = "none";
+    //         // z.style.display="inline";
+    //         h.style.display="inline";
+    //         sm.style.display="inline";
+    //         z.style.display="none";
+
+        // }else if (x=="heading"){
+        //     h.style.display="inline";
+        //     // let sm= document.getElementById("pic");
+        //     sm.style.display="none";
+        //     // z.style.display = "inline";
+
+        }
+        else 
+        sm.style.display ="inline";
+        h.style.display="inline";
+        z.style.display="inline";
+       
+
     }
     </script>
 </head>
@@ -62,60 +105,58 @@
         <div class="breakOne">
 
             <p class="title space">Early Adulthood</p>
-            <p class="subtitle" id="ea" onclick="changeTextColor()">Financial Independence</p>
+            <!-- <p class="subtitle" id="ea" onclick="changeTextColor()">Financial Independence</p> -->
 
+            <p class="subtitle" id="heading" ondblclick="changePic(this.id)">Financial Independence</p>
 
-                <p id="b1">After Graduation:</p>
+                <!-- <p class= "subtitle" onclick = "changeTextColor()" id="b1">After Graduation:</p> -->
 
-                <table id="tbl">
+                <!-- <p >Test</p> -->
+
+            <div>
+
+            
+                    
+                <img onclick="changePic(this.id)" id="pic" alt="Financial Wellness Meme" height="400" src="images/financialWellness.jfif"/>
+
+            </div>
+            <div >
+
+         
+                <table ondblclick="changePic(this.id)" id="tbl">
                         <tr id="space">
                             <td>
-                                <img class="pictures" src="images/second.png" height="100" />
+                                <img class="pictures" src="images/job.png" height="100" />
                             </td>
-                            <td> About Savings Accounts
+                            <td onclick = "changeTextColor()" id="b1"> Tips
                                 <ul>
-                                    <li>Liquidity: how easily and quickly you can take your money out of an investment.</li>
-                                    <li>Safety: Bank Savings Accounts are FDIC-insured. In other words, the federal government
-                                        protects your money up to $250,000 in a single account.</li>
-                                    <li>Compound Interest Rates: When a savings account pays interest on the money of your account.</li>
+                                    <li>Make sure to take advantage of your company's benefits:.</li>
+                                    <li>401K:You might not want to do it right now, but think of your future self. For instance, by contributing you can lower your tax burden and don't pay the taxes until you withdraw it in retirement. Some Companies evn contribute a certain % for every dollar you put in.</li>
+                                    <li>Look at Saving Account Options and CDs: Maybe start thinking about using your saving accounts as an emergency fund and a CD to save for a short-term goal or long-term goal depending on how much time you leave it.</li>
                                 </ul>
         
                             </td>
                     </tr>
                     </table>
-            <!-- <p>It can be scary<p>            
-            </p>
+                </div>
+                    
+                    <!-- <img onclick="changePic(this.id)" id="pic" alt="Financial Wellness Meme" height="400" src="images/financialWellness.jfif"/> -->
+
+                    
+            <!-- </p>
                 <p>There are a lot of things that happen when you graduate, such as finding the perfect job. The older
                     you get the more responsibilities you have and the more money you spend. It is important to budget
                     yourself and start to save, especially if you have a long-term goal to buy a house. It is important
                     to plan how much you're going to save from every paycheck.</p> -->
         </div>
     </div>
-    <div class="breakOne">
-        <div class="secondDiv">
+ 
+</div>
 
-            <p class="title">Tips</p>
-
-
-            <table id="tbl">
-                    <tr id="space">
-                        <td>
-                            <img class="pictures" src="images/job.png" height="100" />
-                        </td>
-                        <td> About Savings Accounts
-                            <ul>
-                                <li>Make sure to take advantage of your company's benefits:</li>
-                                <li>401K:You might not want to do it right now, but think of your future self. For instance, by contributing you can lower your tax burden and don't pay the taxes until you withdraw it in retirement. Some Companies evn contribute a certain % for every dollar you put in.</li>
-                                <li>Look at Saving Account Options and CDs: Maybe start thinking about using your saving accounts as an emergency fund and a CD to save for a short-term goal or long-term goal depending on how much time you leave it.</li>
-                            </ul>
-    
-                        </td>
-                </tr>
-                </table>
             
-        </div>
-    </div>
-    </div>
+                 
+                            
+        
 </body>
 
 </html>
