@@ -8,6 +8,47 @@
     <link rel="stylesheet" text="text/css" href="nav.css">
     <link rel="stylesheet" text="text/css" href="body.css">
     <style>  
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front{
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back{
+    background-color:#2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
 table{
     color: black;
     background-color: white;
@@ -55,6 +96,26 @@ td{
          </header>
  
 <div class="breakOne">
+
+        <p class="title">College Students</p>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+             <div class="flip-card-front">
+                 <img src="images/lifestages.jpg" alt="Avatar" style="width:300px; height:300px;">
+                 </div>
+                 <div class="flip-card-back">
+                    <h1>John</h1>
+                    <p>Architect</p>
+                    <p>We love him</p>
+                 </div>    
+                
+    </div>
+    
+    </div>
+</div>
+<!-- <div class="breakOne">
+
+    
   
     <p class="title">College Students</p>
             <ul>Becoming Financially Independent</ul>
@@ -66,8 +127,10 @@ td{
             <p>Especially, since you're a student it's important to look for what each credit card offers you. For instance, fees are a huge deal breaker. Would you rather choose the credit card that charges you $12 every month or would you rather not pay anything? This is why it is importat to do you due dilligence. Check the table below for things to look out for:</p>
         </div>
 
-    Stay Away from impulse buying
+    Stay Away from impulse buying -->
   <div  class="secondDiv">
+
+
         
             <table class="fixed">
                     <caption colspan="2">Due Dilligence</caption>
