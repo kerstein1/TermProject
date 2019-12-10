@@ -80,23 +80,23 @@
         }
     </style>
     <script>
-    function validateForm(){
-      let myForm = document.getElementById("myForm");
-      let fname = myForm.lname.value;
-      let email = myForm.eaddress.value;
-      let com = myForm.comments.value;
+        function validateForm() {
+            let myForm = document.getElementById("myForm");
+            let fname = myForm.lname.value;
+            let email = myForm.eaddress.value;
+            let com = myForm.comments.value;
 
-      if (fname.length == 0 || email == ""){
-          alert("Please finish the form");
-      }
-      else if (com.length == 0){
-          alert("Please include comments.");
+            if (fname.length == 0 || email == "") {
+                alert("Please finish the form");
+            }
+            else if (com.length == 0) {
+                alert("Please include comments.");
 
-       
-      }else 
-      document.myForm.submit();
-      return false;
-    } 
+
+            } else
+                document.myForm.submit();
+            return false;
+        }
 // function validateForm(){
 //       let myForm = document.getElementById("myForm");
 //       let fname = myForm.lname.value;
@@ -112,10 +112,10 @@
 //       else if (com.length == 0){
 //           alert("Please include comments.");
 
-       
+
 //       }else
 //       document.myForm.reset();
-      
+
 //    return false;
 //     }
     </script>

@@ -13,59 +13,68 @@
     #break {
         text-align: left;
     }
-    .indent{
-        text-align: center;
-        
-    }
-    .subtitle{
-        text-align: center;
-    font-size: 25px;
-    margin: auto;
-    padding: auto;
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    padding-bottom: 0px;
+    .indent {
+        text-align: center;
+
     }
-    .source{
-       
-    text-align: center;
-    font-size: 25px;
-    margin: auto;
-    padding: auto;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    padding-bottom: 0px;
-   
+
+    .subtitle {
+        text-align: center;
+        font-size: 25px;
+        margin: auto;
+        padding: auto;
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        padding-bottom: 0px;
     }
-    #no{
+
+    .source {
+
+        text-align: center;
+        font-size: 25px;
+        margin: auto;
+        padding: auto;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        padding-bottom: 0px;
+
+    }
+
+    .cg {
+        text-align: left;
+    }
+
+    #no {
         text-decoration: none;
     }
 </style>
 
 <script type="text/javascript">
-// function enlargeImage(){
-//     let teenImg = document.getElementById("teenImg");
-//     let w = teenImg.style.width; 
-//     w = parseInt(w);
-//     w = w + 30;
-//     teenImg.style.width = w + "px";
+    // function enlargeImage(){
+    //     let teenImg = document.getElementById("teenImg");
+    //     let w = teenImg.style.width; 
+    //     w = parseInt(w);
+    //     w = w + 30;
+    //     teenImg.style.width = w + "px";
 
-function enlargeImage(imageId){
-    let i = document.getElementById(imageId);
+    function enlargeImage(imageId) {
+        let i = document.getElementById(imageId);
 
-    let w = i.width; 
-    w = w * 1.5;
-    i.style.width = w + "px";
+        let w = i.width;
+        w = w * 1.5;
+        i.style.width = w + "px";
 
-}
-function reduceImage(imageId){
-    let i = document.getElementById(imageId);
-    let w = i.width;
-    w = w / 1.5;
-    i.style.width = w + "px";
-}
+    }
+    function reduceImage(imageId) {
+        let i = document.getElementById(imageId);
+        let w = i.width;
+        w = w / 1.5;
+        i.style.width = w + "px";
+    }
 </script>
+
 <body>
     <div class="firstDiv">
         <header>
@@ -87,40 +96,43 @@ function reduceImage(imageId){
         </header>
 
         <p class="title">Teens</p>
-       
+
         <!-- <p>Most teens obtain their first debit and savings account from their parents/guardians. Especially, since most
             banks have an age limit to when you can open your first debit and savings account.
         </p> -->
-        <img id="teenImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="images/tmoney.jpg" alt="teen meme">
+        <img id="teenImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="images/tmoney.jpg"
+            alt="teen meme">
         <p class="subtitle">Learn how to become a teen that can be trusted with money</p>
     </div>
     <div class="breakOne">
         <div class="break">
-        <p class="title">
-            Explore Saving Options
-        </p>
-                <p class="source">
-                        <a  id="no" href="https://www.themint.org/teens/about-savings-accounts.html">Source</a>
-                </p> 
-            
-        <!-- <div class="indent">
+            <p class="title">
+                Explore Saving Options
+            </p>
+            <p class="source">
+                <a id="no" href="https://www.themint.org/teens/about-savings-accounts.html">Source</a>
+            </p>
+
+            <!-- <div class="indent">
                 <img id="doryImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="images/tmoneytwo.png" alt="teen meme">
             </div> -->
-        <table id="tbl" >
+            <table id="tbl">
                 <tr>
-                     <td>
-                             <img class="pictures" src="images/piggybank.png" height="100"/>
-                         </td>  
-                 <td > About Savings Accounts
-                     <ul>
-                         <li>Liquidity: how easily and quickly you can take your money out of an investment.</li>
-                         <li>Safety: Bank Savings Accounts are FDIC-insured. In other words, the federal government protects your money up to $250,000 in a single account.</li>
-                         <li>Compound Interest Rates: When a savings account pays interest on the money of your account.</li>
-                    </ul>
-                   
-                 </td>
-               
-                 <!-- <td>
+                    <td>
+                        <img class="pictures" src="images/piggybank.png" height="100" />
+                    </td>
+                    <td> About Savings Accounts
+                        <ul>
+                            <li>Liquidity: how easily and quickly you can take your money out of an investment.</li>
+                            <li>Safety: Bank Savings Accounts are FDIC-insured. In other words, the federal government
+                                protects your money up to $250,000 in a single account.</li>
+                            <li>Compound Interest Rates: When a savings account pays interest on the money of your
+                                account.</li>
+                        </ul>
+
+                    </td>
+
+                    <!-- <td>
                          <img src="images/college.png" height="100"/>
                      </td>  
                  <td>What are the best Saving Account Options: 
@@ -129,9 +141,9 @@ function reduceImage(imageId){
                      <li>Separate spending money from savings</li>
                  </ul>
              </td> -->
-                    
-             </tr>
-             </table>
+
+                </tr>
+            </table>
 
 
 
@@ -150,32 +162,32 @@ function reduceImage(imageId){
                 <li>Creating an account where you don't touch that money. You act like you don't have it. Instead it is
                     earning interest. </li>
             </ol> -->
-          
+
         </div>
-       
+
     </div>
 
     <!-- <div class="breakOne">
         <div class="break"> -->
-<div class="thirdDiv breakOne break">
-<p class="title"> Saving Account Options: </p>
-<table id="tbl" >
+    <div class="thirdDiv breakOne break">
+        <p class="title"> Saving Account Options: </p>
+        <table id="tbl" class="cg">
 
-        <tr>
+            <tr>
                 <td>
-                        <img class="pictures" src="images/piggybank.png" height="100"/>
-                    </td>  
-                    <td>What are the best Saving Account Options: 
-                            <ul>
-                                <li>Start Money Saving Habit</li>
-                                <li>Separate spending money from savings</li>
-                            </ul>
-                        </td>
-                  
-     </tr>
-     </table>
-</div>
-    
+                    <img class="pictures" src="images/giphy.gif" height="100" />
+                </td>
+                <td>Money Saving Habits:
+                    <ul>
+                        <li>Separate spending money from savings</li>
+                        <li>If you are employed, save 10% of your paycheck each payment period</li>
+                    </ul>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
     <div class="fourthDiv">
         <p class="title">Dive Deeper into Personal Finance:</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/8jkri0AeZWQ" frameborder="0"

@@ -54,46 +54,101 @@
             transform: rotateY(180deg);
         }
 
-    
-        table#second {
+        .savingsback {
+            background-color: #e0b59a;
+        }
+
+        .creditback {
+            background-color: #bcaf9c;
+        }
+
+        #second {
+            background-color: #c5d1b5;
+        }
+
+        table {
             color: black;
-            background-color: white;
+            background-color: #f5f5dc;
             margin-right: auto;
             margin-left: auto;
             border: 2px black solid;
+
         }
 
+        /* 
         caption {
             border: 2px black solid;
-        }
+        } */
 
-        
 
-        .cell {
-            text-align: center;
-        }
+
+
 
         .firstDiv {
             background-color: #f5f5dc;
             text-align: center;
         }
 
-        @media screen and (max-width: 600px){
-            .breakOnecs{
+        @media screen and (max-width: 600px) {
+            .breakOnecs {
                 width: 100%;
                 display: block;
                 margin-bottom: 20px;
             }
-    
+
         }
 
-        #tbl{
-       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       font-size: 15px;
-        color: black;
-        border: 0;
-    }
+        #tbl {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            color: black;
+            border: 0;
+
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 25px;
+            margin: auto;
+            padding: auto;
+            padding-left: 2px;
+            padding-right: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            padding-bottom: 10px;
+
+        }
+
+        .pad {
+            padding-bottom: 5px;
+        }
+
+        #budget {
+            text-align: left;
+
+            font-size: 25px;
+
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
     </style>
+    <script>
+        function enlargeImage(imageId) {
+            let i = document.getElementById(imageId);
+
+            let w = i.width;
+            w = w * 1.5;
+            i.style.width = w + "px";
+
+
+        }
+        function reduceImage(imageId) {
+            let i = document.getElementById(imageId);
+            let w = i.width;
+            w = w / 1.5;
+            i.style.width = w + "px";
+        }
+    </script>
 </head>
 
 <body>
@@ -117,143 +172,164 @@
         </header>
 
 
-        <div class="breakOnecs">
+        <div class="breakOne">
 
-            <p class="title">College Students</p>
-        
-        <table id="tbl">
+            <p class="title space">College Students</p>
+            <p class="subtitle">Navigate Personal Finances</p>
+
+            <table id="tbl">
                 <tr>
-                        <td>
-                <div class="flip-card">
-            
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                          
-                                <img src="images/debit.png" alt="Debit" style="width:300px; height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Checking Account</h1>
-                                <p>Allows easy access to funds</p>
-                                <p>Account you use to pay bills and make most purchases</p>
-                            </div>
-                        
-                       
-                        </div>
-        
-                    </div>
-        </td>
-    
-            <td>
+                    <td>
+                        <div class="flip-card">
 
-       
-                    
-                    <div class="flip-card">
-                
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              
-                                <img src="images/savings.png" alt="Debit" style="width:300px; height:300px;">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+
+                                    <img src="images/debit.png" alt="Debit" style="width:300px; height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Checking Account</h1>
+                                    <p>Allows easy access to funds</p>
+                                    <p>Account you use to pay bills and make most purchases</p>
+                                </div>
+
+
                             </div>
-                            <div class="flip-card-back">
-                                <h1>Savings Account</h1>
-                                <p>Allows easy access to funds</p>
-                                <p>Account you use to pay bills and make most purchases</p>
-                            </div>
-                      
+
                         </div>
-        
+                    </td>
+
+                    <td>
+
+
+
+                        <div class="flip-card">
+
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+
+                                    <img src="images/savings.png" alt="Debit" style="width:300px; height:300px;">
+                                </div>
+                                <div class="flip-card-back savingsback">
+                                    <h1>Savings Account</h1>
+                                    <p>An account that allows you to safely store your money and earn interest.</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+        </div>
+
+
+
+        </td>
+        <td>
+
+
+
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <img src="images/credit.png" alt="Debit" style="width:300px; height:300px;">
                     </div>
-        
+                    <div class="flip-card-back creditback">
+                        <h1>Credit Cards</h1>
+                        <p>Provides access to a line of credit offered by your card issuer.</p>
+                        <p>Helps build credit,but if not used properly, it can lead you into unhealthy debt.</p>
+
+                    </div>
+                    <!-- which can help with huge purchases in the your future (e.g. House)</p> -->
                 </div>
-        
-                
+
+            </div>
+
+    </div>
+
+
+
+    </td>
+    </tr>
+
+    </table>
+    </div>
+
+
+    <div class="secondDiv pad">
+        <p class="title">Due Diligence</p>
+        <p class="subtitle">Before you start opening accounts, make sure to do your due diligence</p>
+        <table id="second" class="fixed">
+            <!-- <caption class="title" colspan="2">Due Diligence</caption> -->
+            <tr>
+                <td>Look for:</td>
+                <td>Examples:</td>
+            </tr>
+            <tr>
+                <td>Sign-Up Bonus:</td>
+                <td>When you spend $500within 3 months of opening account, you'll earn a $50 cash bonus added to
+                    your
+                    account.</td>
+            </tr>
+            <tr>
+                <td>Earning Rewards:</td>
+                <td>You'll earn unlimited 3% back on dinning</td>
+
+            </tr>
+            <tr>
+
+                <td>Reedeming Rewards:</td>
+                <td>Cash back does not expire</td>
+            </tr>
+            <tr>
+                <td>Introductory APR:</td>
+                <td>None (APR is the annual rate charged for borrowing through an investment). Savings-highest amount
+                    preferable.</td>
+            </tr>
+
+        </table>
+
+
+        <!-- <p>*This is important</p>
+            <p>Choosing the Best Savings Account</p> -->
+        <!-- <p>It is important to know how much APY% each savings account has as well as the fees that you're being
+                charged. Be careful and choose the right one for you!</p> -->
+    </div>
+
+
+    <div class="thirdDiv space">
+        <p class="title">Tips</p>
+        <!-- <p class="subtitle">Budgeting</p> -->
+        <table id="tbl">
+
+            <tr id="budget">
+                <td>
+
+                    <img id="doryImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)"
+                        src="images/tmoneytwo.png" alt="teen meme" height="250">
+
+                    <!-- <img class="pictures" src="images/tmoneytwo.png" height="100"/> -->
+                </td>
+                <td> Budgeting:
+
+                    <li>Separate spending and saving money.</li>
+                    <li>Stay away from impulse buying. It can be dangerous to spend money you don't have</li>
+                    <li>If you have an income, transfer 10% of your paycheck each time you're paid.</li>
+
+
 
                 </td>
-            </tr>
-        </table>
-         
 
-        <!-- <table id="tbl" >
-                <tr>
-                     <td>
-                             <img class="pictures" src="images/piggybank.png" height="100"/>
-                         </td>  
-                 <td > About Savings Accounts
-                     <ul>
-                         <li>Liquidity: how easily and quickly you can take your money out of an investment.</li>
-                         <li>Safety: Bank Savings Accounts are FDIC-insured. In other words, the federal government protects your money up to $250,000 in a single account.</li>
-                         <li>Compound Interest Rates: When a savings account pays interest on the money of your account.</li>
-                    </ul>
-                   
-                 </td>
-                </tr> -->
-
-
-
-        <!-- <div class="breakOne">
-
-    
-  
-    <p class="title">College Students</p>
-            <ul>Becoming Financially Independent</ul>
-            <p>This is usually the time when college students venture out into the world and start figuring things out for themselves. One of the most exciting times in a persons' life, but also one of the scariest. Especially, if you have never talked about financial wellness before, the world can appear scary. Below are a few tips on how to open your first bank account as well as select where you want to start building your credit.</p>
-            <ul>Opening Your Own Bank Account</ul>
-            <p>Opening your first bank account without the supervision of your parents is quite exciting. But usually one gets a bank account either because your parents use that bank or because its in close proximity of your school.</p>
-            <p>All of those reasons make a lot of sense, but there are other banks that have a lot of benefits that one might have never thought about.</p>
-            <ul>Choosing Your First Credit Card</ul>
-            <p>Especially, since you're a student it's important to look for what each credit card offers you. For instance, fees are a huge deal breaker. Would you rather choose the credit card that charges you $12 every month or would you rather not pay anything? This is why it is importat to do you due dilligence. Check the table below for things to look out for:</p>
-        </div>
-
-    Stay Away from impulse buying -->
-        <div class="secondDiv">
-
-
-
-            <table id="second" class="fixed">
-                <caption colspan="2">Due Dilligence</caption>
-                <tr class="cell">
-                    <td>Look for:</td>
-                    <td>Examples:</td>
-                </tr>
-                <tr class="cell">
-                    <td>Sign-Up Bonus:</td>
-                    <td>When you spend $500within 3 months of opening account, you'll earn a $50 cash bonus added to
-                        your
-                        account.</td>
-                </tr>
-                <tr class="cell">
-                    <td>Earning Rewards</td>
-                    <td>You'll earn unlimited 3% back on dinning</td>
-
-                </tr>
-                <tr class="cell">
-
-                    <td>Reedeming Rewards</td>
-                    <td>Cash back does not expire</td>
-                </tr>
-                <tr class="cell">
-                    <td>Introductory APR</td>
-                    <td>None*</td>
-                </tr>
-            </table>
-            <p>*This is important</p>
-            <ul>Choosing the Best Savings Account</ul>
-            <p>It is important to know how much APY% each savings account has as well as the fees that you're being
-                charged.
-                Be careful and choose the right one for you!</p>
-            <ul>Tips</ul>
-            <ol>
-                <li>Emergency Fund: You're an adult now, you need money that you can use as a cushion. You can't always
-                    rely
-                    on your parents. </li>
-                <br>
-                <li>Budgeting: Not having a steady income can limit the amount of money you have </li>
-            </ol>
-        </div>
-
-        <div class="thirdDiv" id="sp">
-        </div>
     </div>
+    </table>
+    <!-- Emergency Fund: You're an adult now, you need money that you can use as a cushion. You can't always
+                    rely
+                    on your parents. 
+                
+                Budgeting: Not having a steady income can limit the amount of money you have -->
+
 </body>
 
 </html>
