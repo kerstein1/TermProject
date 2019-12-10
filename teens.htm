@@ -1,56 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teens</title>
     <link rel="stylesheet" text="text/css" href="nav.css">
+    <link rel="stylesheet" text="text/css" href="body.css">
 </head>
 <style>
-
-
+    #break {
+        text-align: left;
+    }
+    .indent{
+        text-align: center;
+    }
 </style>
+
+<script type="text/javascript">
+// function enlargeImage(){
+//     let teenImg = document.getElementById("teenImg");
+//     let w = teenImg.style.width; 
+//     w = parseInt(w);
+//     w = w + 30;
+//     teenImg.style.width = w + "px";
+
+function enlargeImage(imageId){
+    let i = document.getElementById(imageId);
+
+    let w = i.width; 
+    w = w * 1.5;
+    i.style.width = w + "px";
+
+}
+function reduceImage(imageId){
+    let i = document.getElementById(imageId);
+    let w = i.width;
+    w = w / 1.5;
+    i.style.width = w + "px";
+}
+</script>
 <body>
+    <div class="firstDiv">
         <header>
-              
-                <nav class="navigation-bar">
-               
-                    <div class="tabs">
-                        <ul>
-                                <a href="index.htm">
-                                        <img class= "logo" src="images/rnblogo.png"></a>
-                            <li><a href="index.htm">Home</a></li>
-                            <li><a href="contact.htm">Contact</a></li>
-                            <li><a href="site-map.htm">Site Map</a></li>
-                            <li><a href="Lifestages.htm">Life Stages</a></li>
-                            <li><a href="teens.htm">Teens</a></li>
-                            <li><a href="college-students.htm">College Students</a></li>
-                            <li><a href="early-adulthood.htm">Early Adulthood</a></li>    
-                        </ul>
-                    </div>
-                    </nav>
-            </header>
+            <nav class="navigation-bar">
+                <div class="tabs">
+                    <ul>
+                        <a href="index.htm">
+                            <img class="logo" src="images/rnblogo.png"></a>
+                        <li><a href="index.htm">Home</a></li>
+                        <li><a href="contact.htm">Contact</a></li>
+                        <li><a href="site-map.htm">Site Map</a></li>
+                        <li><a href="Lifestages.htm">Life Stages</a></li>
+                        <li><a href="teens.htm">Teens</a></li>
+                        <li><a href="college-students.htm">College Students</a></li>
+                        <li><a href="early-adulthood.htm">Early Adulthood</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <p class="title">Teens</p>
-    <h2>First Bank Account</h2>
-    <p>Most teens obtain their first debit and savings account from their parents/guardians. Especially, since most banks have an age limit to when you can open your first debit and savings account.</li>
-    </p>
-    <ul> 
-        <li>Build Your Knowledge</li>
-    </ul>
-    <ol>
-        <li>Learn about different-goals:</li>
-        <br>
-        <p>Short Term Goals vs. Long-Term Goals: Saving for a bike vs. a book. It is going to take less time to save for a book than it is for a bike.</p>
-        <li>Compound Interest:</li>
-        <p>interest you earn on your interest (earning twice as much) This can happen if you start saving early.</p>
+        <p class="title">Teens</p>
+       
+        <!-- <p>Most teens obtain their first debit and savings account from their parents/guardians. Especially, since most
+            banks have an age limit to when you can open your first debit and savings account.
+        </p> -->
+        <img id="teenImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="images/tmoney.jpg" alt="teen meme">
+        <p id="subtitle">Learn how to become a teen that can be trusted with money</p>
+    </div>
+    <div class="breakOne">
+        <div class="break">
+        
+            <ul>
+                <li>Build Your Knowledge</li>
+            </ul>
+            <ol>
+                <li>Learn about different-goals:</li>
+                <li>Short Term Goals vs. Long-Term Goals:
+                    Saving for a bike vs. a book.
+                <li> It is going to take less time to save for a book than it is for a bike.</li>
+                <li>Compound Interest:</li>
+                <li>interest you earn on your interest (earning twice as much) This can happen if you start saving
+                    early.</li>
+                <li>Building your emergency fund: </li>
+                <li>Creating an account where you don't touch that money. You act like you don't have it. Instead it is
+                    earning interest. </li>
+            </ol>
+           <div class="indent">
+            <img id="doryImg" onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" src="images/tmoneytwo.png" alt="teen meme">
+        </div>
+        </div>
+       
+    </div>
 
-        <li>Building your emergency fund: </li>
-        <p>Creating an account where you don't touch that money. You act like you don't have it. Instead it is earning interest. </p>
-    </ol>
-<h3>Here's a fun Clip</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8jkri0AeZWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+    <div class="thirdDiv">
+        <p class="title">Here's a fun Clip</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8jkri0AeZWQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 </body>
+
 </html>
