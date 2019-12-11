@@ -62,6 +62,7 @@ body{
 
 .navigation-bar li a:hover:not(.active){
     background-color:#ffbd4a;
+    height:100%;
 }
 
 h4{
